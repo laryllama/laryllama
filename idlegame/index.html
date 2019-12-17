@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Idle Game</title>
+    <link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+  <body>
+    <!-- Nav Bar -->
+    <ul>
+      <li class="nav_itm"><a href="/">Home</a></li>
+      <li class="nav_itm" onclick="save()">Save</li>
+      <li class="nav_itm" onclick="load()">Load</li>
+    </ul>
+    <div class="content">
+      <div class="left_clmn">
+        <div class="top">
+          Upgrades
+        </div>
+        <div class="btm">
+          <br>
+          <div id="cursorsDIV">
+            <img class="upgradeIMG" src="images/cursor.png" alt="cursor">
+            <button class="buy_btn" onclick="buyCursor(); calcClicksPerSec();">Buy Cursor</button>
+            <br>
+            Cursors: <span id="cursors">0</span>
+            <br>
+            Cursor Cost: <span id="cursorCost">10</span>
+          </div>
+          <br>
+          <br>
+          <div id="catsDIV">
+            <img class="upgradeIMG" src="images/cat.png" alt="cat">
+            <button class="buy_btn" onclick="buyCats(); calcClicksPerSec();">Buy Cat</button>
+            <br>
+            Cats: <span id="cats">0</span>
+            <br>
+            Cat Cost: <span id="catsCost">20</span>
+          </div>
+          <br>
+          <br>
+          <div id="dogsDIV">
+            <img class="upgradeIMG" src="images/dog.png" alt="dog">
+            <button class="buy_btn" onclick="buyDogs(); calcClicksPerSec();">Buy Dog</button>
+            <br>
+            Dogs: <span id="dogs">0</span>
+            <br>
+            Dog Cost: <span id="dogsCost">40</span>
+          </div>
+          <br>
+          <br>
+          Clicks Per Second: <span id="clicksPerSec">0</span>
+        </div>
+      </div>
+      <div class="right_clmn">
+        <div class="cash">Cash: <span id="cash">0</span></div>
+      	<br>
+        <img class="cash_click" src="images/cash.png" alt="Cash" onclick="cashClick(1)">
+        <div class="googleAd">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Horizontal Image Ads -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-9639994701956625"
+               data-ad-slot="6903525988"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

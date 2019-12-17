@@ -1,0 +1,133 @@
+html {
+  height: 100%
+}
+
+body {
+  background: linear-gradient(to bottom, #ffe6ea 0%, #ff8095 100%);
+  margin: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 100%;
+  width: 100%;
+  padding-top: 47px;
+  position: fixed;
+}
+
+/* NAV BAR */
+ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 10px;
+  height: 46px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff4d6a;
+  border-bottom: 1px solid black;
+}
+
+li {
+  float: left;
+}
+
+li.nav_itm {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li.nav_itm:hover {
+  background-color: #00b300;
+}
+
+.content {
+  height: inherit;
+}
+
+/* COLUMNS */
+.left_clmn {
+  float: left;
+  width: 25%;
+  border-right: 1px solid black;
+  position: fixed;
+  height: inherit;
+}
+
+.top {
+  background-color: #ff4d6a;
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.btm {
+  margin-left: 25%;
+}
+
+.upgradeIMG {
+  height: 50px;
+  float: left;
+}
+
+.right_clmn {
+  float: right;
+  width: 75%;
+  position: relative;
+  height: inherit;
+}
+
+.cash_click {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.googleAd {
+
+}
+
+/* Clicking Animation */
+.cash_click:active {
+  animation: animation 50ms linear both;
+}
+
+@keyframes animation {
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(0.90, 0, 0, 0, 0, 0.90, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+}
+
+/* For Phone Screen Sizes */
+@media only screen and (max-width: 1000px) {
+
+  .cash_click {
+    width: 200px;
+  }
+
+}
+
+/* BUTTONS */
+.buy_btn {
+  cursor: pointer;
+}
+
+/* TEXT */
+.cash {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}

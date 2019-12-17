@@ -1,0 +1,176 @@
+html{
+    min-height:100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffe6ea 0%, #ff8095 100%);
+    text-align: center;         /* make sure IE centers the page too */
+}
+
+.content {
+    width: 100%;
+    margin: auto;             /* center the page */
+    background-color: transparent;
+    font-family: Arial;
+    text-align: left;
+}
+
+/* The navigation bar */
+.menu {
+  overflow: hidden;
+  background-color: #ff4d6a;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
+
+/* Links inside the navbar */
+.menu a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 1vw 0;
+  text-decoration: none;
+  width: 20%;
+}
+
+/* Change background on mouse-over */
+.menu a:hover {
+  background: #00b300;
+  color: white;
+}
+
+/* FORMS */
+.wrapper{
+    width: 50%;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 2vw;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 4vw;
+  padding: 1vw 2vw;
+  font-size: 3vw;
+  color: #555;
+  background-color: white;
+  background-image: none;
+  border: 0;
+  border-radius: 4vw;
+}
+
+.long-form {
+    height: 20vw ;
+}
+
+.select-form {
+    width: 20vw;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: .6vw 1.2vw;
+  margin-bottom: 0;
+  font-size: 1.4vw;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: .1vw solid transparent;
+  border-radius: .4vw;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #ff4d6a;
+}
+
+.footer {
+    clear: both;
+}
+ 
+/* begin table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+table a {
+    color: #000;
+}
+ 
+table a:hover {
+    color:#373737;
+    text-decoration: none;
+}
+ 
+th {
+    background-color: #ff4d6a;
+    color: white;
+    font-size: 3vw;
+}
+ 
+td {
+    padding: 5px;
+}
+
+.category, .cat_desc, .topic, .created_at {
+    width: 50%;
+    text-align: center;
+}
+
+.created_by {
+    width: 20%;
+    text-align: center;
+}
+
+.reply {
+    width: 80%
+}
+
+/* Begin font styles */
+h1 {
+    margin-top: 5vw;
+    font-family: Arial;
+    color: #4d000d;
+    font-size: 5vw;
+}
+ 
+h3 {
+    margin: 0; padding: 0;
+}
+ 
+.small {
+    font-size: 75%;
+    color: #373737;
+}
+.footer {
+    font-size: 65%;
+    padding: 3px 0 0 0;
+}
+ 
+.topic-post {
+    height: 100px;
+    overflow: auto;
+}
+ 
+.post-content {
+    padding: 30px;
+}
+ 
+textarea {
+    width: 500px;
+    height: 200px;
+}
